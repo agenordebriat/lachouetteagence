@@ -46,10 +46,7 @@ a:hover {
 }
 
 .bloc {
-    width: 100%;
-    clear: both;
     background: 50% 50% no-repeat;
-    padding: 0 50px;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -57,60 +54,22 @@ a:hover {
     position: relative;
 }
 
-.bloc .container {
-    padding-left: 0;
-    padding-right: 0;
-}
-
-.bloc-lg {
-    padding: 100px 50px;
-}
-
-.bloc-md {
-    padding: 50px;
-}
-
-.bg-t-edge,
-.bg-repeat {
-    -webkit-background-size: auto!important;
-    -moz-background-size: auto!important;
-    -o-background-size: auto!important;
-    background-size: auto!important;
-}
-
 .bg-repeat {
     background: repeat;
 }
 
-.bg-t-edge {
-    background: top no-repeat;
-}
-
-.bloc-bg-texture::before {
+.texture-paper::before {
     content: "";
-    background-size: 2px 2px;
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-}
-
-.texture-paper::before {
     background: url("img/texture-paper.png");
-    background-size: 280px 280px;
 }
 
-.b-parallax {
+.parallax {
     background-attachment: fixed;
-}
-
-.voffset {
-    margin-top: 30px;
-}
-
-.voffset-lg {
-    margin-top: 80px;
 }
 
 .navbar {
@@ -158,13 +117,8 @@ a:hover {
     margin-right: 10px;
 }
 
-.mg-md {
-    margin-top: 10px;
-    margin-bottom: 20px;
-}
-
-.btn {
-    margin: 0 5px 5px 0;
+.logo {
+    width: 100px;
 }
 
 button {
@@ -182,12 +136,11 @@ button {
     box-shadow: 0 1px 3px rgba(0, 0, 1, .25), inset 0 1px 0 0 rgba(255, 255, 255, .15);
 }
 
-.icon-lg {
-    font-size: 60px!important;
-}
-
-.sm-shadow {
+.et {
+    font-size: 60px;
+    color: #364577;
     text-shadow: 0 1px 2px rgba(0, 0, 0, .3);
+    border-color: #364577;
 }
 
 h1,
@@ -197,16 +150,37 @@ h3,
 a {
     font-family: "Open Sans", sans-serif;
     font-weight: 700;
-    color: #333!important;
+    color: #333;
 }
 
-.container {
-    max-width: 1000px;
+h1 {
+    font: 4.4rem Kingthings, cursive;
+    margin: 0;
+    color: #fff;
+}
+
+h2 {
+    font-size: 2.2rem;
+    line-height: 1.4em;
+    margin: 0;
+}
+
+h3 {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #333;
+    margin: 0;
 }
 
 p {
     font-size: 1.6rem;
     color: #575757;
+    margin: 0;
+}
+
+blockquote {
+    margin: 0;
 }
 
 blockquote > p {
@@ -225,72 +199,21 @@ label {
     color: #fff;
 }
 
-.tight-width-whitespace {
-    max-width: 600px;
-    margin: auto auto auto auto;
-}
-
-.cta-hero {
-    margin-top: 22px;
-    color: #FFFFFF!important;
+.btn-text {
+    color: #fff;
     text-transform: uppercase;
-    padding: 12px 28px 12px 28px;
+    padding: 10px 25px;
     font-size: 1.8rem;
     font-weight: 700;
 }
 
-h2 {
-    font-size: 2.2rem;
-    line-height: 1.4em;
-}
-
-h3 {
-    font-size: 1.8rem;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: #333333!important;
-}
-
-.med-width-whitespace {
-    max-width: 800px;
-    margin: auto auto auto auto;
-    box-shadow: 0px 0px 0px #000000;
-}
-
-h1 {
-    color: #333333!important;
-}
-
-.icons {
-    margin-bottom: 14px;
-    margin-top: 24px;
-}
-
-.white {
-    color: #FFFFFF!important;
-}
-
-.portfolio-thumb {
-    margin-bottom: 24px;
-}
-
-.portfolio-row {
-    margin-bottom: 44px;
-    margin-top: 50px;
-}
-
-.black-background {
-    background-color: rgba(165, 147, 99, 0.7);
-    padding: 40px 40px 40px 40px;
-}
-
-.bold-link {
+.text-link-bold {
     font-weight: 900;
-    text-decoration: underline!important;
+    text-decoration: underline;
 }
 
-.bgc-white {
-    background-color: #FFFFFF;
+.bgc-beige {
+    background-color: rgba(165, 147, 99, 0.7);
 }
 
 .bgc-dark-slate-blue {
@@ -301,8 +224,8 @@ h1 {
     background-color: #B65E41;
 }
 
-.tc-white {
-    color: #fff!important;
+.text-white {
+    color: #fff;
 }
 
 .btn-atomic-tangerine {
@@ -315,32 +238,27 @@ h1 {
     color: #FFFFFF!important;
 }
 
-.ltc-white {
-    color: #FFFFFF!important;
-}
-
-.ltc-white:hover {
-    color: #cccccc!important;
-}
-
-.icon-dark-slate-blue {
-    color: #364577!important;
-    border-color: #364577!important;
-}
-
-.bg-lines-h2-bg {
-    background-image: url("img/lines-h2-bg.png");
+.bg-lines {
+    background-image: url("img/lines.png");
 }
 
 .webp .bg-banniere {
-    background-image: url("img/la-chouette-agence-banniere.webp");
+    background-image: url("img/banniere.webp");
+}
+
+.nowebp .bg-banniere {
+    background-image: url("img/banniere.jpg");
 }
 
 .webp .bg-presentation {
-    background-image: url("img/image-de-presentation.webp");
+    background-image: url("img/presentation.webp");
 }
 
-.footer {
+.nowebp .bg-presentation {
+    background-image: url("img/presentation.jpg");
+}
+
+footer {
     font-size: 35px;
     display: flex;
     align-items: center;
@@ -349,14 +267,14 @@ h1 {
     padding: 25px 0;
 }
 
-.footer a {
+footer a {
     color: rgba(255, 255, 255, 0.6) !important;
 }
 
-.footer a:hover {
+footer a:hover {
     color: #fff !important;
 }
 
-.footer a:not(:first-child) {
+footer a:not(:first-child) {
     margin-left: 50px;
 }
