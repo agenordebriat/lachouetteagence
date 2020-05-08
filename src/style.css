@@ -461,12 +461,20 @@ h1 {
     background-image: url("img/lines-h2-bg.png");
 }
 
-.bg-banniere {
+.no-webp .bg-banniere {
     background-image: url("img/la-chouette-agence-banniere.jpg");
 }
 
-.bg-presentation {
+.webp .bg-banniere {
+    background-image: url("img/la-chouette-agence-banniere.webp");
+}
+
+.no-webp .bg-presentation {
     background-image: url("img/image-de-presentation.jpg");
+}
+
+.webp .bg-presentation {
+    background-image: url("img/image-de-presentation.webp");
 }
 
 @media (max-width: 1024px) {
