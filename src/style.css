@@ -350,10 +350,6 @@ label {
     margin: auto auto auto auto;
 }
 
-.h1 {
-    font-size: 20px;
-}
-
 .cta-hero {
     margin-top: 22px;
     color: #FFFFFF!important;
@@ -519,81 +515,23 @@ h1 {
     }
 }
 
-@media (max-width: 767px) {
-    .page-container {
-        overflow-x: hidden;
-        position: relative;
-    }
-    h1,
-    h2,
-    h3,
-    p {
-        padding-left: 10px!important;
-        padding-right: 10px!important;
-    }
-    .b-parallax {
-        background-attachment: scroll;
-    }
-    .navbar .nav {
-        padding-top: 0;
-        border-top: 1px solid rgba(0, 0, 0, .2);
-        float: none!important;
-    }
-    .navbar.row {
-        margin-left: 0;
-        margin-right: 0;
-    }
-    .site-navigation {
-        position: inherit;
-        transform: none;
-        -webkit-transform: none;
-        -ms-transform: none;
-    }
-    .nav > li {
-        margin-top: 0;
-        border-bottom: 1px solid rgba(0, 0, 0, .1);
-        background: rgba(0, 0, 0, .05);
-        text-align: left;
-        padding-left: 15px;
-        width: 100%;
-    }
-    .nav > li:hover {
-        background: rgba(0, 0, 0, .08);
-    }
-    .navbar-collapse {
-        padding: 0;
-        overflow-x: hidden;
-        -webkit-box-shadow: none;
-        box-shadow: none;
-    }
-    .navbar-brand img {
-        max-height: 40px;
-        width: auto;
-    }
-    .bloc {
-        padding-left: 0;
-        padding-right: 0;
-    }
-    
-    .bloc-lg {
-        padding: 40px 0;
-    }
-    .bloc-sm,
-    .bloc-md {
-        padding-left: 0;
-        padding-right: 0;
-    }
-    .voffset {
-        margin-top: 5px;
-    }
-    .voffset-lg {
-        margin-top: 30px;
-    }
+.footer {
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 100px;
+    padding: 25px 0;
 }
 
-@media (max-width: 400px) {
-    .bloc {
-        padding-left: 0;
-        padding-right: 0;
-    }
+.footer a {
+    color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.footer a:hover {
+    color: #fff !important;
+}
+
+.footer a:not(:first-child) {
+    margin-left: 50px;
 }
