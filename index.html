@@ -6,17 +6,17 @@
   <meta name="description"
         content="La chouette agence, agence de web design basée à Lyon, vous accompagne dans toutes les étapes de la création ou de la refonte de votre site web.">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-  <link rel="shortcut icon" type="image/png" href="favicon.jpg?ckcachebust=7e8d1e98b962c4ba20aebaf737f74cc8">
-  <link rel="stylesheet" href="./css/bootstrap.css?ckcachebust=a7780f06fa2dadbaf1ba90e5e78d7992">
-  <link rel="stylesheet" href="style.css?ckcachebust=b545aa52e19f38da0b726dc30ab28726">
-  <link rel="stylesheet" href="./css/font-awesome.css?ckcachebust=2cae6b6762d304e633059b2fbcd8d3e7">
-  <link rel="stylesheet" href="./css/et-line.css?ckcachebust=83ade0db0950cf4341b9cd229b2ffdb9">
+  <link rel="shortcut icon" type="image/png" href="favicon.jpg?ckcachebust=a6d1055b798c8196d70f698b7c4892bb">
+  <link rel="stylesheet" href="./css/bootstrap.css?ckcachebust=9801300582b99215446fa0f8fece4234">
+  <link rel="stylesheet" href="style.css?ckcachebust=327b8e6f7027da398ce0d0dce125f1f9">
+  <link rel="stylesheet" href="./css/font-awesome.css?ckcachebust=71bd1c426f5c1b1bb71615508ee908de">
+  <link rel="stylesheet" href="./css/et-line.css?ckcachebust=33a4cb05083d2c85291c77b0cdabad6c">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-  <script src="./js/jquery-2.1.0.js?ckcachebust=d489262db79302a83d7ded71205a980b"></script>
-  <script src="./js/bootstrap.js?ckcachebust=61a86a0f206fb848bf1076d53c497341"></script>
-  <script src="./js/blocs.js?ckcachebust=fe4a2c2d515c5250aabe3580c2f64f9e"></script>
-  <script src="./js/jquery.touchSwipe.js?ckcachebust=da6fae6441615a2d52109da6b06b9dfe" defer="defer"></script>
-  <script src="./js/gmaps.js?ckcachebust=d9f2b41ae01242b4004690a35661bf18"></script>
+  <script src="./js/jquery-2.1.0.js?ckcachebust=98826bf9c1547e83ff0c71ded8aa8613"></script>
+  <script src="./js/bootstrap.js?ckcachebust=c2d1e5389777ab1fe02b656fd9d71da4"></script>
+  <script src="./js/blocs.js?ckcachebust=65dd2bacf4d3b0f098e3199fb480c73b"></script>
+  <script src="./js/jquery.touchSwipe.js?ckcachebust=4e873afe615574899737ae77dd332a5f" defer="defer"></script>
+  <script src="./js/gmaps.js?ckcachebust=e92d7a998c4b81ec9ea97d7687309c1b"></script>
   <title>La chouette agence - Web Design - Lyon</title>
 </head>
 
@@ -148,12 +148,40 @@
         </div>
       </div>
     </div>
-    <div class="bloc bgc-dark-slate-blue bg-banniere d-bloc bloc-bg-texture texture-paper" id="bloc-5-cta">
+    <div class="bloc bgc-dark-slate-blue bg-banniere d-bloc bloc-bg-texture texture-paper" id="bloc-5">
       <div class="container bloc-lg">
         <div class="row">
           <div class="col-sm-12 text-center">
-            <h2 class="mg-md tc-white"> Prêt pour redonner vie à votre projet ?<br> Contactez notre équipe ! </h2> <a
-               href="page2.html" class="btn btn-atomic-tangerine btn-clean btn-rd btn-lg cta-hero">Contact</a>
+            <h2 class="mg-md text-center tc-white">
+              Prêt pour redonner vie à votre projet ?<br>Contactez notre équipe !
+            </h2>
+            <form class="form-contact">
+              <div class="form-group">
+                <label for="name">
+                  Nom :
+                </label>
+                <input class="form-control" id="name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">
+                  Adresse email :
+                </label>
+                <input class="form-control" id="email" required type="email">
+              </div>
+              <div class="form-group">
+                <label for="infos">
+                  Comment nous avez-vous connu ?
+                </label>
+                <input class="form-control" id="infos" required type="text">
+              </div>
+              <div class="form-group">
+                <label for="message">
+                  Brief de votre projet (ajoutez autant de détails que nécessaire) :
+                </label>
+                <textarea class="form-control" cols="50" id="message" required rows="4"></textarea>
+              </div>
+              <button class="btn btn-lg btn-clean cta-hero btn-atomic-tangerine" type="submit">Envoyer</button>
+            </form>
           </div>
         </div>
       </div>

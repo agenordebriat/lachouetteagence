@@ -339,6 +339,12 @@ cite {
     color: #575757;
 }
 
+label {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #fff;
+}
+
 .tight-width-whitespace {
     max-width: 600px;
     margin: auto auto auto auto;
