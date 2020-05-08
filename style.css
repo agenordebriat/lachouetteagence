@@ -460,7 +460,7 @@ h1 {
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/image-de-presentation.jpg");
 }
 
 @media (max-width: 1024px) {
