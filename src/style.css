@@ -138,6 +138,10 @@ label {
   color: #fff;
 }
 
+.m-auto {
+  margin: 0 auto;
+}
+
 .max-width-1000 {
   max-width: 1000px;
   margin: 0 auto;
@@ -359,7 +363,13 @@ label {
 }
 
 .map {
-  width: 600px;
+  width: 300px;
+}
+
+@media (min-width:768px) {
+  .map {
+    width: 600px;
+  }
 }
 
 .scrolltotop {
