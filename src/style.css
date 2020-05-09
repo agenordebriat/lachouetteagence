@@ -59,6 +59,7 @@ button {
 }
 
 cite {
+  font-size: 1.6rem;
   color: #575757;
 }
 
@@ -241,7 +242,7 @@ label {
   background-image: url("img/banniere.webp");
 }
 
-.nowebp .bg-banniere {
+.no-webp .bg-banniere {
   background-image: url("img/banniere.jpg");
 }
 
@@ -249,7 +250,7 @@ label {
   background-image: url("img/presentation.webp");
 }
 
-.nowebp .bg-presentation {
+.no-webp .bg-presentation {
   background-image: url("img/presentation.jpg");
 }
 
