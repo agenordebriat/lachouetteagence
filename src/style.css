@@ -68,7 +68,13 @@ footer {
   align-items: center;
   justify-content: center;
   max-height: 100px;
-  padding: 25px 0;
+  padding: 25px 40px 25px 0;
+}
+
+@media (min-width: 375px) {
+  footer {
+    padding: 25px 0;
+  }
 }
 
 footer a {
@@ -80,7 +86,13 @@ footer a:hover {
 }
 
 footer a:not(:first-child) {
-  margin-left: 50px;
+  margin-left: 12px;
+}
+
+@media (min-width: 768px) {
+  footer a:not(:first-child) {
+    margin-left: 50px;
+  }
 }
 
 h1, h2, h3, .btn, a {
@@ -132,6 +144,7 @@ label {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .text-white {
@@ -159,8 +172,24 @@ label {
   margin-bottom: 50px;
 }
 
+@media (max-width: 768px) {
+  .mb-50 {
+    margin-bottom: 25px;
+  }
+}
+
 .mb-25 {
   margin-bottom: 25px;
+}
+
+.mb-25-tel {
+  margin-bottom: 25px;
+}
+
+@media (min-width: 768px) {
+  .mb-25-tel {
+    margin-bottom: 0px;
+  }
 }
 
 .mb-10 {
@@ -171,8 +200,24 @@ label {
   margin-right: 25px;
 }
 
+@media (max-width: 768px) {
+  .mr-25 {
+    margin-right: 0;
+  }
+}
+
 .p-50 {
   padding: 50px;
+}
+
+@media (max-width: 425px) {
+  .p-50 {
+    padding: 25px;
+  }
+}
+
+.portfolio-1 {
+  margin-bottom: 25px;
 }
 
 /* #endregion Mise en page */
@@ -363,7 +408,14 @@ label {
 }
 
 .map {
-  width: 300px;
+  width: 250px;
+  border-radius: 5px;
+}
+
+@media (min-width:425px) {
+  .map {
+    width: 350px;
+  }
 }
 
 @media (min-width:768px) {
