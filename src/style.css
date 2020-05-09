@@ -36,7 +36,7 @@ body {
 
 a, button {
   transition: all .3s ease-in-out;
-  outline: none!important;
+  outline: none;
 }
 
 a:hover {
@@ -55,7 +55,7 @@ blockquote>p {
 }
 
 button {
-  outline: none!important;
+  outline: none;
 }
 
 cite {
@@ -72,11 +72,11 @@ footer {
 }
 
 footer a {
-  color: rgba(255, 255, 255, 0.6) !important;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 footer a:hover {
-  color: #fff !important;
+  color: #fff;
 }
 
 footer a:not(:first-child) {
@@ -123,12 +123,14 @@ label {
 
 /* #region Mise en page */
 
-.br-img {
-  border-radius: 5px;
-}
-
 .flex-center {
   display: flex;
+  justify-content: center;
+}
+
+.flex-center-column {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
@@ -237,13 +239,13 @@ label {
 /* #region Boutons  */
 
 .btn-atomic-tangerine {
-  background: #B65E41;
-  color: #FFFFFF!important;
+  background: #b65e41;
+  color: #fff;
 }
 
 .btn-atomic-tangerine:hover {
-  background: #c27956!important;
-  color: #FFFFFF!important;
+  background: #c27956;
+  color: #fff;
 }
 
 .btn-clean {
@@ -324,6 +326,25 @@ label {
 
 /* #endregion Header */
 
+.adresse {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.adresse em {
+  font-weight: 400;
+}
+
+.adresse a {
+  display: inline-block;
+  font-size: 1.8rem;
+}
+
+.br-img {
+  border-radius: 5px;
+}
+
 .et {
   font-size: 60px;
   color: #364577;
@@ -335,4 +356,8 @@ label {
 .logo {
   width: 100px;
   margin-bottom: 10px;
+}
+
+.map {
+  width: 600px;
 }
