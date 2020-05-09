@@ -52,7 +52,7 @@
           La chouette agence.
         </h1>
         <div>
-          <a href="page2.html" class="btn btn-lg btn-clean btn-rd btn-text btn-atomic-tangerine">
+          <a href="#bloc-5" class="btn btn-lg btn-clean btn-rd btn-text btn-atomic-tangerine">
             Contact
           </a>
         </div>
@@ -134,7 +134,7 @@
             Nous travaillerons ensemble pour créer des sites beau et bien structurés, qui seront facilement trouvable
             sur les moteurs de recherche.
           </p>
-          <a href="page2.html" class="btn btn-lg btn-clean btn-rd btn-text btn-atomic-tangerine">
+          <a href="#bloc-5" class="btn btn-lg btn-clean btn-rd btn-text btn-atomic-tangerine">
             Contact
           </a>
         </div>
@@ -295,6 +295,11 @@
     </div>
   </footer>
   <!-- endregion Footer -->
+  <!-- #region Scroll to top -->
+  <div onclick="toTopFunction()" aria-label="Remonter en haut de la page" id="scrollToTop">
+    <i class="scrolltotop fas fa-chevron-up"></i>
+  </div>
+  <!-- #endregion Scroll to top -->
   <script src="js/modernizr.js"></script>
   <script>
     Modernizr.on('webp', function (result) {
@@ -307,6 +312,25 @@
   </script>
   <script src="js/jquery.js"></script>
   <script src="js/bootstrap.js"></script>
+  <script>
+    mybutton = document.getElementById("scrollToTop");
+    window.onscroll = function () {
+      scrollFunction()
+    };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    function toTopFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
 </body>
 
 </html>
