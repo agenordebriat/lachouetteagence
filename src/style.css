@@ -148,10 +148,6 @@ label {
   align-items: center;
 }
 
-.text-white {
-  color: #fff;
-}
-
 .m-auto {
   margin: 0 auto;
 }
@@ -441,4 +437,12 @@ label {
 .scrolltotop:hover {
   color: #fff;
   background-color: rgba(0, 0, 0, .4);
+}
+
+.text-white {
+  color: #fff;
+}
+
+.underline {
+ text-decoration: underline;
 }
