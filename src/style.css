@@ -34,6 +34,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+#bloc-6 a {
+  font-size: 1.8rem;
+}
+
 a, button {
   transition: all .3s ease-in-out;
   outline: none;
@@ -373,18 +377,10 @@ label {
 /* #endregion Header */
 
 .adresse {
-  font-size: 1.8rem;
-  font-weight: 700;
-  color: #333;
+  text-transform: none;
 }
-
 .adresse em {
   font-weight: 400;
-}
-
-.adresse a {
-  display: inline-block;
-  font-size: 1.8rem;
 }
 
 .br-img {
