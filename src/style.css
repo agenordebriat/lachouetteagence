@@ -400,20 +400,46 @@ label {
   margin-bottom: 15px;
 }
 
+form > div {
+  position: relative;
+}
+
+form > div > label {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  color: #575757;
+  text-align: left;
+}
+
 .form-control {
   font-size: 1.6rem;
+  transition: background-color 0.5s;
   border: none;
-  color: #333;
 }
 
 .form-control:focus {
-  font-size: 1.6rem;
-  background-color: rgb(224, 242, 255);
-  transition: all 0.5s;
+  background-color: rgb(200, 238, 255);
 }
 
-.form-control:focus:invalid {
-  background-color: rgb(255, 200, 202);
+.form-control:focus + label {
+  opacity: 0;
+}
+
+.form-control:invalid:not(:placeholder-shown) {
+  background-color: rgb(255, 200, 200);
+}
+
+.form-control:invalid:not(:placeholder-shown) + label {
+  opacity: 0;
+}
+
+.form-control:valid {
+  background-color: rgb(210, 255, 220);
+}
+
+.form-control:valid + label {
+  opacity: 0;
 }
 
 .logo {
