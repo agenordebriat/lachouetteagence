@@ -21,7 +21,7 @@
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 62.5%; /* 1rem = 10px */
   scroll-behavior: smooth;
 }
 
@@ -234,10 +234,6 @@ label {
   position: relative;
 }
 
-.bg-lines {
-  background-image: url("img/lines.png");
-}
-
 .webp .bg-banniere {
   background-image: url("img/banniere.webp");
 }
@@ -252,10 +248,6 @@ label {
 
 .no-webp .bg-presentation {
   background-image: url("img/presentation.jpg");
-}
-
-.bg-repeat {
-  background: repeat;
 }
 
 .texture-paper::before {
