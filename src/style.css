@@ -108,6 +108,7 @@ h1, h2, h3, .btn, a {
 
 h1 {
   font-size: 2.4rem;
+  color: #b65e41;
   margin: 0;
 }
 
@@ -280,7 +281,7 @@ label {
 }
 
 .bgc-atomic-tangerine {
-  background-color: #B65E41;
+  background-color: #b65e41;
 }
 
 /* #endregion Background */
