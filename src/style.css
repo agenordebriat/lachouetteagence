@@ -339,7 +339,7 @@ label {
 
 .navbar-toggler {
   font-size: 2rem;
-  padding: 25px 25px 25px 0;
+  margin: 25px 25px 25px 0;
   border-style: none;
 }
 
