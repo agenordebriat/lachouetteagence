@@ -400,6 +400,22 @@ label {
   margin-bottom: 15px;
 }
 
+.form-control {
+  font-size: 1.6rem;
+  border: none;
+  color: #333;
+}
+
+.form-control:focus {
+  font-size: 1.6rem;
+  background-color: rgb(224, 242, 255);
+  transition: all 0.5s;
+}
+
+.form-control:focus:invalid {
+  background-color: rgb(255, 200, 202);
+}
+
 .logo {
   width: 100px;
   margin-bottom: 10px;
